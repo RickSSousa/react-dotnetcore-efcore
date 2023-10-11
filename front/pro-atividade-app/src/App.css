@@ -1,0 +1,5 @@
+.custom-disabled-input {
+  background-color: #f2f2f2;
+  color: #666;
+  cursor: not-allowed;
+}
