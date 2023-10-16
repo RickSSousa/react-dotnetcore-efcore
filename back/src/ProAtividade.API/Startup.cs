@@ -43,6 +43,9 @@ namespace ProAtividade.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProAtividade.API", Version = "v1" });
             });
+
+            //com esse método, permito q meu front acesse meu back
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,11 +63,15 @@ namespace ProAtividade.API
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            //estou permitindo acesso a tudo
+            app.UseCors(options => options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

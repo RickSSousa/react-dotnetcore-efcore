@@ -4,12 +4,10 @@ export default function Atividade(props) {
 
   function prioridadeLabel(param){
     switch(param){
-      case '1':
-        return "Baixa"
-      case '2':
-        return "Normal"
-      case '3':
-        return "Alta"
+      case "Baixa":
+      case "Normal":
+      case "Alta":
+        return param
       default:
         return "Não Definida"
     }
@@ -17,11 +15,11 @@ export default function Atividade(props) {
 
   function prioridadeStyle(param, icone){
     switch(param){
-      case '1':
+      case 'Baixa':
         return icone ? "smile" : "success"
-      case '2':
+      case 'Normal':
         return icone? "meh" : "dark"
-      case '3':
+      case 'Alta':
         return icone? "frown" : "warning"
       default:
         return "Não Definida"
@@ -57,7 +55,7 @@ export default function Atividade(props) {
           </button>
           <button 
             className='btn btn-sm btn-outline-danger me-2' 
-            onClick={() => props.deletarAtividade(props.ativ.id)}
+            onClick={() => props.handleConfirmModal(props.ativ.id)}
           >
             {/* fazer essa arrow function no onclick é o mesmo que não colocar os parenteses no metodo, evita que o metodo seja executado quando o jsx cria o botão */}
            <i className='fas fa-trash me-2'></i>

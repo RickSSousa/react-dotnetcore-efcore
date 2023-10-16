@@ -12,7 +12,7 @@ export default function AtividadeLista(props) {
                 ativ = {ativ}
                 key={ativ.id}
                 pegarAtividade={props.pegarAtividade}
-                deletarAtividade={props.deletarAtividade}
+                handleConfirmModal={props.handleConfirmModal}
               />
             ))}
       </div>

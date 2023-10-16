@@ -31,12 +31,13 @@ namespace ProAtividade.API.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<Atividade> Post(Atividade atividade)
+        public Atividade Post(Atividade atividade)
         {
             _context.Atividades.Add(atividade);
             if (_context.SaveChanges() > 0)
             {
-                return _context.Atividades;
+                //o entity adicionou o id correto na atividade que estou salvando, por isso já consigo filtrar por id:
+                return _context.Atividades.FirstOrDefault(ativ => ativ.Id == atividade.Id);
             }
             else
             {
