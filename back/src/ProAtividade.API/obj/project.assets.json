@@ -576,6 +576,31 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "ProAtividade.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.10",
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.10",
+          "ProAtividade.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProAtividade.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProAtividade.Data.dll": {}
+        }
+      },
+      "ProAtividade.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProAtividade.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProAtividade.Domain.dll": {}
+        }
       }
     }
   },
@@ -1381,6 +1406,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ProAtividade.Data/1.0.0": {
+      "type": "project",
+      "path": "../ProAtividade.Data/ProAtividade.Data.csproj",
+      "msbuildProject": "../ProAtividade.Data/ProAtividade.Data.csproj"
+    },
+    "ProAtividade.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProAtividade.Domain/ProAtividade.Domain.csproj",
+      "msbuildProject": "../ProAtividade.Domain/ProAtividade.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1389,6 +1424,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
+      "ProAtividade.Data >= 1.0.0",
+      "ProAtividade.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -1426,7 +1463,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ricks\\Desktop\\React\\back\\src\\ProAtividade.Data\\ProAtividade.Data.csproj": {
+              "projectPath": "C:\\Users\\ricks\\Desktop\\React\\back\\src\\ProAtividade.Data\\ProAtividade.Data.csproj"
+            },
+            "C:\\Users\\ricks\\Desktop\\React\\back\\src\\ProAtividade.Domain\\ProAtividade.Domain.csproj": {
+              "projectPath": "C:\\Users\\ricks\\Desktop\\React\\back\\src\\ProAtividade.Domain\\ProAtividade.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

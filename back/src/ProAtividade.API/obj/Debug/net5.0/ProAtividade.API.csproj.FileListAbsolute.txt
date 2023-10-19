@@ -54,4 +54,8 @@ C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes
 C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Data.dll
+C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Domain.dll
+C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Data.pdb
+C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\bin\Debug\net5.0\ProAtividade.Domain.pdb
 C:\Users\ricks\Desktop\React\back\src\ProAtividade.API\obj\Debug\net5.0\refint\ProAtividade.API.dll
